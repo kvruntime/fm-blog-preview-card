@@ -1,4 +1,6 @@
 import './App.css'
+import illustration from "/public/images/illustration-article.svg"
+import avatar from "/public/images/image-avatar.webp"
 
 function App() {
 
@@ -7,7 +9,7 @@ function App() {
       <main className='min-h-screen flex flex-col justify-center items-center gap-2 px-3'>
 
         <article className='card p-[24px]'>
-          <img src="/public/images/illustration-article.svg" alt="" />
+          <img src={illustration} alt="illustration" />
           <div className='my-5'>
             <div ><span className='font-extrabold  bg-[--yellow] rounded-[5px] px-2 py-1'>Learning</span></div>
             <div className='font-semibold my-3 '><span>Published 21 Dec 2023</span></div>
@@ -19,7 +21,7 @@ function App() {
 
           <div className='flex flex-row items-center justify-start gap-2'>
             <span className='card-user-profile'>
-              <img src="/public/images/image-avatar.webp" alt="avatar"
+              <img src={avatar} alt="avatar"
                 className='' />
             </span>
             <span className='font-bold'>Greg Hooper</span>
