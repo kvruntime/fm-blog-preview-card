@@ -2,16 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-	font-family: Figtree;
-	font-style: normal;
-	font-weight: 500, 800;
-	src: url('https://fonts.google.com/specimen/Figtree');
+@layer base {
+	@font-face {
+		font-family: 'Figtree';
+		font-style: normal;
+		font-weight: 500, 800;
+		src: url('/public/fonts/Figtree-VariableFont_wght.ttf');
+	}
 }
 
 body {
 	font-size: 16px;
+	font-family: 'Figtree';
 }
 p {
-	line-height: 1.6;
+	line-height: 1.5;
 }
